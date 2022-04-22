@@ -1,0 +1,63 @@
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+body{
+        background-image: url('../images/portfolio4.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: whitesmoke;
+        backdrop-filter: blur(8px);
+        font-family: 'Inter',
+        sans-serif;
+}
+nav{
+background: #12c2e9;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+}
+
+#profile-image{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.project-image{
+    width: 80%;
+}
+
+.icon-img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #E9E9E9;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color:white !important;
+}
+.nav-link:hover{
+    background-color: #c471ed;
+    
+}
+
+.description{
+    border-right: 2px solid green;
+}
+
+#logo{
+    width:80px;
+    height: 50px;
+    border-radius: 20px;
+}
+#tog{
+    color:black;
+}

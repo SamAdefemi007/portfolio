@@ -1,0 +1,103 @@
+{% extends 'homepage/base.html' %} {% load static %} {% block content %}
+
+<div class="container mt-5 mb-5">
+  <div class="d-lg-flex justify-content-center my-5">
+    <div
+      class="col-lg-5 border-right border-primary ms-2 d-flex flex-column align-items-center"
+    >
+      <img
+        id="profile-image"
+        class="d-block img-fluid"
+        src="{% static 'images/samuelprofile.jpeg' %}"
+        alt="picture of samuel olaniyan"
+      />
+      <p class="pt-2 fs-2">Samuel Olaniyan</p>
+      <p class="fst-italic">Software Developer</p>
+      <div class="d-flex justify-content-center">
+        <button class="me-2 px-2 py-2 rounded">
+          <img
+            class="icon-img"
+            src="{% static 'images/gmail.png' %}"
+            alt=""
+          /><a
+            target="_blank"
+            class="text-decoration-none"
+            href="mailto:olaniyansamuel2015@gmail.com"
+            >Send a Mail</a
+          >
+        </button>
+        <button class="px-2 py-2 rounded">
+          <img
+            class="icon-img"
+            src="{% static 'images/linkedin.png' %}"
+            alt=""
+          /><a
+            target="_blank"
+            class="text-decoration-none"
+            href="https://www.linkedin.com/in/samuel-olaniyan/"
+            >linkedin</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="col-lg-6 border border-light px-2 rounded my-5">
+      <h4 class="text-decoration-underline pt-3">About Me</h4>
+      <p class="px-2 py-2 fs-6">
+        I am a skilled problem solver with over 4 years of general work
+        experience who now uses tech as a tool to provide solutions.I currently
+        solve problems using Python frameworks for backend(Django and Flask),
+        Html,CSS(Bootstrap) & javascript for adaptive designs in Frontend
+        development and database management systems such as Sqlite, Postgres and
+        MySQL. I see frameworks and languages as just tools which are based on
+        the fundamental building blocks of computer science and i could easily
+        learn a new language or framework to solve a problem. I am a certified
+        scrum master familiar with agile methodologies and i am open to all
+        connections and opportunities within the industry.
+      </p>
+    </div>
+  </div>
+  <hr />
+
+  <div class="d-lg-flex mb-2 justify-content-evenly">
+    <div class="d-lg-flex flex-row align-items-center ms-lg-5 mb-3 mb-lg-0">
+      <button class="btn btn-success btn-large mx-auto">
+        <a
+          class="text-decoration-none text-white fs-4 py-5"
+          href="{% url 'projects' %}"
+          >Check out my projects</a
+        >
+      </button>
+    </div>
+
+    <div class="d-lg-flex flex-column align-items-center">
+      <h3>Technology Stack</h3>
+
+      <div class="border border-light px-3 py-3 rounded">
+        <div class="d-flex justify-content-between">
+          <p class="description me-2 px-2 py-2">Languages</p>
+          <p class="px-2 py-2">Python</p>
+          <p class="px-2 py-2">C#</p>
+          <p class="px-2 py-2">JavaScript</p>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <p class="description me-2 px-2 py-2">Front End</p>
+          <p class="px-2 py-2">HTML5</p>
+          <p class="px-2 py-2">CSS3</p>
+          <p class="px-2 py-2">BootStrap</p>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <p class="description me-2 px-2 py-2">Back End</p>
+          <p class="px-2 py-2">Python</p>
+          <p class="px-2 py-2">Django</p>
+          <p class="px-2 py-2">Flask</p>
+          <p class="px-2 py-2">SQL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

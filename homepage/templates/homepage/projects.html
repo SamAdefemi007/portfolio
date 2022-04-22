@@ -1,0 +1,68 @@
+{% extends 'homepage/base.html' %} {% load static %} {% block content %}
+<div id="projects" class="container my-5 px-3">
+  <h3 class="text-center me-5">Completed Projects</h3>
+  <div class="d-lg-flex justify-content-center mt-5">
+    <div class="d-flex flex-column">
+      <a
+        href="https://rate-flix.herokuapp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="img-fluid project-image mb-3 d-block"
+          src="{% static 'images/rateflix.png'%}"
+          alt=""
+      /></a>
+      <p>RateFlix - A movie recommendation web application</p>
+      <div class="d-lg-flex mb-lg-3">
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+            href="https://rate-flix.herokuapp.com/"
+            >Live Demo</a
+          >
+        </button>
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+            href="https://github.com/SamAdefemi007/rateflixv2"
+            >View Source Code</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="d-flex flex-column mt-5 mt-lg-0">
+      <a href=""
+        ><img
+          class="img-fluid project-image mb-3"
+          src="{% static 'images/statstack.png'%}"
+          alt=""
+      /></a>
+      <p>StatStack - A movie recommendation web application</p>
+      <div class="d-lg-flex">
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+            href="https://stat-stack.herokuapp.com/"
+            >Live Demo</a
+          >
+        </button>
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+            href="https://github.com/SamAdefemi007/Stat-Stack-final"
+            >View Source Code</a
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

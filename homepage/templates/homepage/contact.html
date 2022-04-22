@@ -1,0 +1,69 @@
+{% extends 'homepage/base.html' %} {% load static %} {% block content %}
+<div class="container mt-5">
+  <div class="w-50 mx-auto">
+    <h3 class="mb-3">Please see below my contact details</h3>
+    <hr />
+
+    <p>
+      <img class="icon-img" src="{% static 'images/gmail.png' %}" alt="" /><span
+        class="fs-5"
+        >Email Address:</span
+      ><span class="fst-italic ms-2">olaniyansamuel2015@gmail.com</span>
+      <a
+        target="_blank"
+        class="text-decoration-none btn btn-primary btn-small ms-3"
+        href="mailto:olaniyansamuel2015@gmail.com"
+        >Send a Mail</a
+      >
+    </p>
+    <p>
+      <img
+        class="icon-img"
+        src="{% static 'images/linkedin.png' %}"
+        alt=""
+      /><span class="fs-5">LinkedIn:</span>
+
+      <a
+        target="_blank"
+        class="text-decoration-none btn btn-primary ms-3"
+        href="https://www.linkedin.com/in/samuel-olaniyan/"
+        >linkedin/Samuel-Olaniyan</a
+      >
+    </p>
+    <p>
+      <img class="icon-img" src="{% static 'images/call.png' %}" alt="" /><span
+        class="fs-5"
+        >Phone No</span
+      >
+      <a class="btn btn-primary ms-3" href="tel:+447467253630"
+        >Call: +447467253630</a
+      >
+    </p>
+    <p class="fs-5">Available work permits</p>
+    <ul class="list-unstyled">
+      <li>
+        <img class="icon-img" src="{% static 'images/correct.png' %}" alt="" />
+        <img class="icon-img" src="{% static 'images/uk.png' %}" alt="" />United
+        Kingdom
+      </li>
+      <li>
+        <img class="icon-img" src="{% static 'images/correct.png' %}" alt="" />
+        <img
+          class="icon-img"
+          src="{% static 'images/canada.png' %}"
+          alt=""
+        />Canada
+      </li>
+      <li>
+        <img class="icon-img" src="{% static 'images/correct.png' %}" alt="" />
+        <img
+          class="icon-img"
+          src="{% static 'images/nigeria.png' %}"
+          alt=""
+        />Nigeria
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
